@@ -15,7 +15,7 @@ public class Profesor {
     private String email;
     private String parola;
 
-    @OneToMany(mappedBy = "profesor", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "profesor", cascade = CascadeType.ALL) //asigura stergerea datelor stil cascade (ex: save delete sudenti)
     private List<Curs> cursuri;
 
     @ManyToMany

@@ -14,9 +14,6 @@ public interface ProfesorRepository extends JpaRepository<Profesor, Long> {
     // Folosit în autentificare din ProfesorService
     Optional<Profesor> findByEmail(String email);
 
-    // Opțional: Poate fi păstrat pentru alte cazuri, dar în LoginController nu mai e folosit
-    Optional<Profesor> findByEmailAndParola(String email, String parola);
-
     // Obține lista de studenți asociați unui profesor
     @Query("SELECT p.studenti FROM Profesor p WHERE p.id = :id")
     List<Student> findStudentiByProfesorId(@Param("id") Long id);

@@ -24,13 +24,13 @@ public class Student {
     )
     private List<Curs> cursuri;
 
-    // ✅ Constructori
+
     public Student() {}
     public Student(Long id) {
         this.id = id;
     }
 
-    // ✅ Getteri și setteri
+
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
