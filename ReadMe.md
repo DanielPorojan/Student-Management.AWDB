@@ -84,3 +84,10 @@ Autentificarea este activată pentru zona de profesor. Poți crea un cont nou de
 Fișierul `baza de date.sql` conține structură + câteva exemple. Însă aplicația creează automat tabelele necesare la rulare.
 
 ---
+
+## ✅ Testare
+
+Aplicația conține teste de bază pentru:
+
+- **Test unitar: StudentServiceTest** – verifică salvarea unui student folosind un repository simulat (mock).
+- **Test de integrare: StudentControllerIntegrationTest** – testează dacă un utilizator autentificat poate accesa lista de studenți (`/studenti`) și primește răspunsul corect (`200 OK`).
